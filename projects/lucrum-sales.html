@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucrum Sales - Omer Younas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #02569B;
+            --accent: #13B9FD;
+            --bg: #f5f5f5;
+            --text: #333;
+            --card-bg: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .nav {
+            background: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+
+        .project-meta a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: var(--bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav a {
+                margin: 0 1rem;
+            }
+
+            .project-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html">← Back to Home</a>
+            <div>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="project-header">
+            <h1>Lucrum Sales</h1>
+            <p>Comprehensive sales management solution handling customers, sales orders, payments, stock, reports, and sales team operations.</p>
+            <!-- <div class="project-meta">
+                <a href="#">View on GitHub</a>
+                <a href="#">Live Demo</a>
+            </div> -->
+        </div>
+
+        <img src="../assets/images/lucrum-sales/lucrum-sales.jpg" alt="Lucrum Sales Screenshot" class="project-image">
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>The Lucrum Sales App is a comprehensive mobile solution designed to manage and streamline sales operations.
+      It offers tools for sales team management, territory allocation, customer management, order processing, payments, and stock tracking.
+      Features route optimization, trip management, and detailed reporting enabling real-time activity tracking.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Flutter</span>
+                <span class="tech-item">Dart</span>
+                <span class="tech-item">BLoC (State Management)</span>
+                <span class="tech-item">GetIt (Dependency Injection)</span>
+                <span class="tech-item">Clean Architecture</span>
+                <span class="tech-item">SOLID Principles</span>
+                <span class="tech-item">RESTful APIs</span>
+                <span class="tech-item">WebSockets (Socket.io)</span>
+                <span class="tech-item">SQLite (Offline Persistence)</span>
+                <span class="tech-item">Localization</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                
+                <li>Sales Team Management
+                    <ul class="features-list">
+                        <li>Assign and monitor team performance and tasks</li>
+                    </ul>
+                </li>
+
+                <li>Territory Management
+                    <ul class="features-list">
+                        <li>Allocate sales regions and track progress</li>
+                    </ul>
+                </li>
+
+                <li>Customer Management
+                    <ul class="features-list">
+                        <li>Manage customer profiles, interactions, and history</li>
+                        <li>Credit limit management</li>
+                        <li>Customer categorization</li>
+                    </ul>
+                </li>
+
+                <li>Sales Order Management
+                    <ul class="features-list">
+                        <li>Create, track, and manage sales orders</li>
+                        <li>Real-time inventory checking</li>
+                        <li>Price management and discounts</li>
+                    </ul>
+                </li>
+
+                <li>Payment Processing
+                    <ul class="features-list">
+                        <li>Multiple payment methods</li>
+                        <li>Payment tracking and reconciliation</li>
+                        <li>Receipt generation</li>
+                    </ul>
+                </li>
+
+                <li>Route Optimization & Trip Management
+                    <ul class="features-list">
+                        <li>Plan and optimize travel routes for sales visits</li>
+                    </ul>
+                </li>
+
+                <li>Stock Tracking
+                    <ul class="features-list">
+                        <li>Real-time inventory level tracking</li>
+                        <li>Low stock alerts</li>
+                    </ul>
+                </li>
+
+                <li>Reporting & Analytics
+                    <ul class="features-list">
+                        <li>Sales, payment, and performance reports</li>
+                        <li>Custom report generation</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Gallery</h2>
+            <div class="gallery">
+                <img src="../assets/images/lucrum-sales/lucrum-sales-1.jpg" alt="Sales Dashboard">
+                <img src="../assets/images/lucrum-sales/lucrum-sales-2.jpg" alt="Order Management">
+                <img src="../assets/images/lucrum-sales/lucrum-sales-3.jpg" alt="Customer Management">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Development Process</h2>
+            <p>Built using Clean Architecture ensuring separation of concerns and maintainability.
+      State management with BLoC and dependency injection via GetIt provide robustness and testability.
+      Offline-first design with SQLite and real-time synchronization through WebSockets ensure seamless user experience.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Impact & Results</h2>
+            <ul class="features-list">
+                <li>Increased sales team efficiency by 40%</li>
+                <li>Reduced order processing time by 60%</li>
+                <li>Improved inventory accuracy by 95%</li>
+                <li>Enhanced customer satisfaction through better service</li>
+                <li>Streamlined payment collection process</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ in Flutter spirit by Omer Younas</p>
+        <p>© 2025 All rights reserved</p>
+    </footer>
+</body>
+
+</html>

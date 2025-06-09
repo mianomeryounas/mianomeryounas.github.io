@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucrum Food Delivery - Omer Younas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #02569B;
+            --accent: #13B9FD;
+            --bg: #f5f5f5;
+            --text: #333;
+            --card-bg: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .nav {
+            background: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+
+        .project-meta a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: var(--bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav a {
+                margin: 0 1rem;
+            }
+
+            .project-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html">← Back to Home</a>
+            <div>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="project-header">
+            <h1>Lucrum Food Delivery</h1>
+            <p>A complete food delivery platform for customers.</p>
+            <!-- <div class="project-meta">
+                <a href="#">View on GitHub</a>
+                <a href="#">Live Demo</a>
+            </div> -->
+        </div>
+
+        <img src="../assets/images/lucrum-food.jpg" alt="Lucrum Food Delivery Screenshot" class="project-image">
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>Lucrum Food Delivery is a comprehensive food delivery platform connecting customers with restaurants. It provides a seamless experience for ordering food, tracking deliveries, and managing restaurant operations.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Flutter</span>
+                <span class="tech-item">Dart</span>
+                <span class="tech-item">Getx (State Management & Routing & DI)</span>
+                <span class="tech-item">Clean Architecture</span>
+                <span class="tech-item">SOLID Principles</span>
+                <span class="tech-item">RESTful APIs</span>
+                <span class="tech-item">WebSockets (Socket.io)</span>
+                <span class="tech-item">Firebase (Crashlytics, Analytics)</span>
+                <span class="tech-item">Google Maps API</span>
+                <span class="tech-item">MyFatoorah Integration</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                
+                <li>Customer Features
+                    <ul class="features-list">
+                        <li>Restaurant browsing and searching</li>
+                        <li>Menu viewing and ordering</li>
+                        <li>Real-time order tracking</li>
+                        <li>Payment processing</li>
+                    </ul>
+                </li>
+
+                <li>Restaurant Features
+                    <ul class="features-list">
+                        <li>Order management</li>
+                        <li>Menu management</li>
+                        <li>Analytics dashboard</li>
+                        <li>Performance tracking</li>
+                    </ul>
+                </li>
+
+                <li>Delivery Management
+                    <ul class="features-list">
+                        <li>Route optimization</li>
+                        <li>Real-time tracking</li>
+                        <li>Delivery assignment</li>
+                        <li>Status updates</li>
+                    </ul>
+                </li>
+
+                <li>Payment System
+                    <ul class="features-list">
+                        <li>Multiple payment methods</li>
+                        <li>Secure transactions</li>
+                        <li>Payment tracking</li>
+                        <li>Refund management</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Gallery</h2>
+            <div class="gallery">
+                <img src="../assets/images/lucrum-food-1.jpg" alt="Customer Interface">
+                <img src="../assets/images/lucrum-food-2.jpg" alt="Restaurant Dashboard">
+                <img src="../assets/images/lucrum-food-3.jpg" alt="Delivery Tracking">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Development Process</h2>
+            <p>The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on real-time tracking, payment security, and user experience.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Impact & Results</h2>
+            <ul class="features-list">
+                <li>Increased restaurant orders by 60%</li>
+                <li>Reduced delivery time by 35%</li>
+                <li>Enhanced customer satisfaction</li>
+                <li>Improved restaurant efficiency</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ in Flutter spirit by Omer Younas</p>
+        <p>© 2025 All rights reserved</p>
+    </footer>
+</body>
+
+</html>

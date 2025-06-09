@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omer Younas | Flutter Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         :root {
             --primary: #02569B;
@@ -191,6 +192,118 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .experience-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-card h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-card h5 {
+            margin: 1rem 0 0.5rem;
+            color: var(--primary);
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .experience-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .experience-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .education-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-card h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        #contact {
+            background-color: #f5f7fa;
+            padding: 2rem;
+            border-radius: 12px;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        #contact h2 {
+            color: #1e88e5;
+            margin-bottom: 1rem;
+        }
+
+        #contact p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        #contact a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 0.5rem;
+        }
+
+        .icon.email {
+            color: #d93025;
+        }
+
+        /* red for email */
+        .icon.linkedin {
+            color: #0077b5;
+        }
+
+        /* blue for LinkedIn */
+        .icon.github {
+            color: #24292e;
+        }
+
+        /* black for GitHub */
     </style>
 </head>
 
@@ -208,47 +321,247 @@
 
     <header id="home">
         <div class="header-content">
-            <img src="assets/images/profile.jpg" alt="Omer Younas" class="profile-img">
+            <img src="assets/images/profile.jpeg" alt="Omer Younas" class="profile-img">
             <h1>👋 I'm Omer Younas</h1>
-            <p>Flutter Developer | Clean Architecture | BLoC | GetIt</p>
+            <p>Flutter Developer | Clean Architecture | BLoC | GetIt | Getx</p>
         </div>
     </header>
 
     <main>
         <section class="bio">
             <h2>About Me</h2>
-            <p>I'm a passionate Flutter developer with expertise in building scalable mobile applications. I specialize
-                in implementing clean architecture patterns, state management with BLoC, and dependency injection using
-                GetIt. My focus is on creating performant, maintainable, and user-friendly applications.</p>
+            <p>
+                Self-driven Flutter Developer with 2+ years of end-to-end experience across the full Software
+                Development Life Cycle (SDLC), having solely architected and delivered production-grade mobile
+                applications at LucrumX. Proficient in Flutter and Dart with deep expertise in BLoC, GetX, and GetIt for
+                scalable state management. Strong command of Clean Architecture, SOLID principles, modularization, and
+                performance optimization. Experienced in integrating RESTful APIs, WebSockets, ZKTeco biometric systems,
+                and payment gateways like MyFatoorah. Committed to building clean, maintainable, and enterprise-ready
+                cross-platform applications.
+            </p>
+
+        </section>
+
+        <section id="experience">
+            <h2>💼 Professional Experience</h2>
+
+
+            <div class="experience-card">
+                <h3>Flutter Developer → Senior Flutter Developer (Full-time, On-site)</h3>
+                <h4>LucrumX, Pakistan</h4>
+                <p class="date">December 5, 2023 – Present</p>
+                <p>Sole Flutter developer responsible for designing, developing, and maintaining a suite of
+                    enterprise-grade mobile and desktop applications. Implemented Clean Architecture with BLoC, GetX,
+                    and GetIt for scalable state management. Collaborated with backend teams to integrate RESTful APIs,
+                    WebSockets, and biometric systems using Frappe.</p>
+                <h5>Key Projects:</h5>
+                <ul class="experience-list">
+                    <li><strong>Lucrum Sales</strong> – End-to-end sales management platform</li>
+                    <li><strong>LucOPS</strong> – Shop-level operational management tool</li>
+                    <li><strong>Lucrum Order Taking</strong> – Digital ordering system for restaurants</li>
+                    <li><strong>Lucrum KDS</strong> – Real-time kitchen display system</li>
+                    <li><strong>Lucrum Employee App</strong> – Portal for employee attendance and requests</li>
+                    <li><strong>Lucrum Bridal Store</strong> – Customized ordering system for boutiques</li>
+                    <li><strong>Lucrum Food Delivery</strong> – Multi-role food delivery platform</li>
+                    <li><strong>Lucrum Rider</strong> – Delivery tracking and management app</li>
+                    <li><strong>Lucrum Scanner</strong> – Barcode scanning utility for factory operations</li>
+                    <li><strong>Lucrum WeighBridge</strong> – App for vehicle weight monitoring at checkposts</li>
+                    <li><strong>Lucrum Access Control</strong> – ZKTeco biometric integration with Frappe ERP</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3>Flutter Developer (Contract, Remote)</h3>
+                <h4>Zajel, Qatar</h4>
+                <p class="date">December 4, 2024 – May 27, 2025</p>
+                <p>Contract-based Flutter developer responsible for delivering critical feature updates, modernizing
+                    legacy codebases, and enhancing overall app performance. Leveraged Clean Architecture, BLoC, and
+                    GetIt to ensure scalable, maintainable solutions with an improved user experience.</p>
+                <h5>Key Projects:</h5>
+                <ul class="experience-list">
+                    <li><strong>Shorasha Consultant</strong> – Delivered new feature modules, refactored outdated flows,
+                        and improved backend API handling for faster response times.</li>
+                    <li><strong>Shorasha User</strong> – Enhanced appointment booking UX, resolved performance
+                        bottlenecks, and optimized code structure for long-term maintainability.</li>
+                </ul>
+            </div>
+
+
+
+            <div class="experience-card">
+                <h3>Flutter Developer Intern → Junior Developer (Full-time, On-site)</h3>
+                <h4>ProgSoft Tech, Pakistan</h4>
+                <p class="date">May 2023 – December 2023</p>
+                <p>Started as an intern and promoted to Junior Flutter Developer. Delivered multiple small to mid-scale
+                    mobile apps using Flutter and GetX. Focused on UI implementation, API integration, and performance
+                    tuning to meet product goals.</p>
+                <ul class="experience-list">
+                    <li>Developed and maintained cross-platform apps with GetX for reactive state management</li>
+                    <li>Integrated RESTful APIs, implemented responsive UI, and handled local storage</li>
+                    <li>Collaborated in Agile teams to deliver high-performance and scalable app features</li>
+                </ul>
+            </div>
+
         </section>
 
         <section id="projects">
             <h2>🚀 Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="assets/images/order-app.jpg" alt="Order Taking App" class="project-image">
+                    <img src="assets/images/lucrum-sales.jpg" alt="Lucrum Sales" class="project-image">
                     <div class="project-content">
-                        <h3>Order Taking App</h3>
-                        <p>A comprehensive restaurant ordering system built with Flutter and Frappe backend. Features
-                            real-time order updates and kitchen display integration.</p>
+                        <h3>Lucrum Sales</h3>
+                        <p>A complete sales management solution handling customers, sales orders, payments, stock,
+                            reports, and sales team operations.</p>
                         <div class="project-links">
-                            <a href="project-1.html">View Details</a>
-                            <a href="#">GitHub</a>
-                            <a href="#">Live Demo</a>
+                            <a href="projects/lucrum-sales.html">View Details</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <img src="assets/images/kds.jpg" alt="KDS System" class="project-image">
+                    <img src="assets/images/lucops/lucops.png" alt="LucOPS" class="project-image">
                     <div class="project-content">
-                        <h3>KDS System</h3>
-                        <p>Kitchen Display System with real-time updates via Frappe server. Optimized for restaurant
-                            kitchens with order prioritization and status tracking.</p>
+                        <h3>LucOPS</h3>
+                        <p>An operational management tool for shops, enabling KPI tracking, task assignments, and
+                            reporting.</p>
                         <div class="project-links">
-                            <a href="#">GitHub</a>
+                            <a href="projects/lucops.html">View Details</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-order.jpg" alt="Lucrum Order Taking" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Order Taking</h3>
+                        <p>A digital ordering solution designed for waiters and call center agents to streamline
+                            restaurant operations.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-order.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-kds.jpg" alt="Lucrum KDS" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum KDS</h3>
+                        <p>A kitchen display system (KDS) for real-time order tracking and management.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-kds.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-employee.jpg" alt="Lucrum Employee App" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Employee App</h3>
+                        <p>A comprehensive employee portal managing HR-related functionalities.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-employee.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-access.jpg" alt="Lucrum Access Control" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Access Control</h3>
+                        <p>A ZKTeco biometric integration with Frappe ERP.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-access.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-bridal.jpg" alt="Lucrum Bridal Store" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Bridal Store</h3>
+                        <p>A specialized order-taking app for clothing and bridal stores.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-bridal.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-food.jpg" alt="Lucrum Food Delivery" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Food Delivery</h3>
+                        <p>A complete food delivery platform for customers.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-food.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-rider.jpg" alt="Lucrum Rider" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Rider</h3>
+                        <p>A delivery rider application for managing orders and deliveries.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-rider.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-scanner.jpg" alt="Lucrum Scanner" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum Scanner</h3>
+                        <p>A factory utility for scanning items and syncing data with ERP systems.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-scanner.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/lucrum-weighbridge.jpg" alt="Lucrum WeighBridge" class="project-image">
+                    <div class="project-content">
+                        <h3>Lucrum WeighBridge</h3>
+                        <p>A specialized utility app for weighbridges to manage and log weight data.</p>
+                        <div class="project-links">
+                            <a href="projects/lucrum-weighbridge.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/shorasha-consultant.jpg" alt="Shorasha Consultant" class="project-image">
+                    <div class="project-content">
+                        <h3>Shorasha Consultant</h3>
+                        <p>A platform for consultants to manage appointments, schedules, and client interactions.</p>
+                        <div class="project-links">
+                            <a href="projects/shorasha-consultant.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/images/shorasha-user.jpg" alt="Shorasha User" class="project-image">
+                    <div class="project-content">
+                        <h3>Shorasha User</h3>
+                        <p>An end-user application enabling customers to book and manage consultant appointments
+                            seamlessly.</p>
+                        <div class="project-links">
+                            <a href="projects/shorasha-user.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>🎓 Education</h2>
+            <div class="education-card">
+                <h3>BS, Computer Science</h3>
+                <h4>Lahore Garrison University</h4>
+                <p class="date">2019 - 2023</p>
             </div>
         </section>
 
@@ -257,26 +570,52 @@
             <div class="skills-grid">
                 <div class="skill-item">Flutter</div>
                 <div class="skill-item">Dart</div>
+                <div class="skill-item">BLoC (Cubit & Bloc)</div>
+                <div class="skill-item">GetIt (Dependency Injection)</div>
+                <div class="skill-item">Getx (State Management & Routing & DI)</div>
                 <div class="skill-item">Clean Architecture</div>
-                <div class="skill-item">BLoC Pattern</div>
-                <div class="skill-item">GetIt</div>
-                <div class="skill-item">Firebase</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">REST APIs</div>
+                <div class="skill-item">SOLID Principles</div>
+                <div class="skill-item">RESTful APIs</div>
+                <div class="skill-item">WebSockets (Socket.io)</div>
+                <div class="skill-item">Firebase (Auth, Firestore, Cloud Functions)</div>
+                <div class="skill-item">Localization & Internationalization</div>
+                <div class="skill-item">State Management (Bloc, Provider, GetX)</div>
+                <div class="skill-item">Modularization & Feature-based Structure</div>
+                <div class="skill-item">Unit & Widget Testing</div>
+                <div class="skill-item">Debugging & Performance Optimization</div>
+                <div class="skill-item">Version Control (Git, GitHub)</div>
+                <div class="skill-item">CI/CD (GitHub Actions)</div>
+                <div class="skill-item">Agile & Scrum Methodologies</div>
+                <div class="skill-item">Code Review & Clean Code Practices</div>
+                <div class="skill-item">ERPNext Integration</div>
+                <div class="skill-item">ZKTeco Integration (Biometric Systems)</div>
+                <div class="skill-item">MyFatoorah Payment Gateway Integration</div>
+                <div class="skill-item">AI Usage (ChatGPT, Cursor, Code Generation)</div>
+                <div class="skill-item">Visual Studio Code</div>
             </div>
         </section>
 
-        <section id="contact">
+
+        <section>
             <h2>📞 Contact</h2>
-            <p>Let's connect and discuss how we can work together!</p>
-            <p>Email: mianomeryounas@email.com</p>
-            <p>GitHub: <a href="https://github.com/mianomeryounas">mianomeryounas</a></p>
+            <div class="experience-card">
+                <p>Let's connect and discuss how we can work together!</p>
+                <p><i class="fas fa-envelope icon email"></i>Email:
+                    <a href="mailto:mianomeryounas@gmail.com">mianomeryounas@gmail.com</a>
+                </p>
+                <p><i class="fab fa-linkedin icon linkedin"></i>LinkedIn:
+                    <a href="https://www.linkedin.com/in/omer-younas/" target="_blank" rel="noopener">omeryounas</a>
+                </p>
+                <p><i class="fab fa-github icon github"></i>GitHub:
+                    <a href="https://github.com/mianomeryounas" target="_blank" rel="noopener">mianomeryounas</a>
+                </p>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>Made with ❤️ in Flutter spirit by Omer Younas</p>
-        <p>© 2024 All rights reserved</p>
+        <p>© 2025 All rights reserved</p>
     </footer>
 </body>
 

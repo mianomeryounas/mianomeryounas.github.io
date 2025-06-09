@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucrum Order Taking - Omer Younas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #02569B;
+            --accent: #13B9FD;
+            --bg: #f5f5f5;
+            --text: #333;
+            --card-bg: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .nav {
+            background: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+
+        .project-meta a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: var(--bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav a {
+                margin: 0 1rem;
+            }
+
+            .project-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="../index.html">← Back to Home</a>
+            <div>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="project-header">
+            <h1>Lucrum Order Taking</h1>
+            <p>A digital ordering solution designed for waiters and call center agents to streamline restaurant operations.</p>
+            <!-- <div class="project-meta">
+                <a href="#">View on GitHub</a>
+                <a href="#">Live Demo</a>
+            </div> -->
+        </div>
+
+        <img src="../assets/images/lucrum-order/lucrum-order.jpg" alt="Lucrum Order Taking Screenshot" class="project-image">
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>Lucrum Order Taking is an end-to-end digital ordering system built to streamline restaurant operations. Designed with an intuitive interface, it enables staff to efficiently manage dine-in orders, while real-time kitchen updates enhance communication and reduce service delays. The system includes a call center module for managing takeaway and delivery orders, and a dispatcher dashboard for workflow automation, rider assignments, and order tracking.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Flutter</span>
+                <span class="tech-item">Dart</span>
+                <span class="tech-item">Getx (State Management & Routing & DI)</span>
+                <span class="tech-item">Clean Architecture</span>
+                <span class="tech-item">SOLID Principles</span>
+                <span class="tech-item">Frappe ERP Integration</span>
+                <span class="tech-item">RESTful APIs</span>
+                <span class="tech-item">WebSockets (Socket.io)</span>
+                <span class="tech-item">Firebase (Crashlytics, Analytics)</span>
+                <span class="tech-item">SQLite (Local Storage)</span>
+                <span class="tech-item">Localization</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                
+                <li>Order Management
+                    <ul class="features-list">
+                        <li>Real-time order creation, updates, and modifications</li>
+                        <li>Table and service area management with live status tracking</li>
+                        <li>Order history, repeat ordering, and customer tagging</li>
+                    </ul>
+                </li>
+
+                <li>Menu Management
+                    <ul class="features-list">
+                        <li>Dynamic menu configuration with instant updates</li>
+                        <li>Category-based organization and item-level customization</li>
+                        <li>Support for discounts, offers, and time-based promotions</li>
+                    </ul>
+                </li>
+
+                <li>Kitchen Display System (KDS) Integration
+                    <ul class="features-list">
+                        <li>Real-time order push to kitchen displays</li>
+                        <li>Live order status and preparation time tracking</li>
+                        <li>Seamless coordination between waitstaff and kitchen</li>
+                    </ul>
+                </li>
+
+                <li>Call Center & Dispatcher Module
+                    <ul class="features-list">
+                        <li>Dedicated interface for agents to place delivery/takeaway orders</li>
+                        <li>Integrated customer database with address autofill</li>
+                        <li>Dispatcher dashboard for workflow and rider assignment</li>
+                    </ul>
+                </li>
+
+                <li>Payment Processing
+                    <ul class="features-list">
+                        <li>Support for multiple payment methods (cash, card, digital wallets)</li>
+                        <li>Bill splitting and tip handling</li>
+                        <li>Automated invoice and receipt generation</li>
+                    </ul>
+                </li>
+
+                <li>Printer Integration
+                    <ul class="features-list">
+                        <li>Multi-station printer configuration (kitchen, billing, dispatch)</li>
+                        <li>Automatic print triggers on order placement or status updates</li>
+                        <li>Customizable print templates and branding</li>
+                    </ul>
+                </li>
+
+                <li>Offline Mode & Sync
+                    <ul class="features-list">
+                        <li>Local data persistence with SQLite</li>
+                        <li>Automatic background synchronization with cloud</li>
+                        <li>Smart conflict resolution strategies</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Gallery</h2>
+            <div class="gallery">
+                <img src="../assets/images/lucrum-order/lucrum-order-1.jpg" alt="Order Interface">
+                <img src="../assets/images/lucrum-order/lucrum-order-2.jpg" alt="Menu Management">
+                <img src="../assets/images/lucrum-order/lucrum-order-3.jpg" alt="Payment Processing">
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Development Process</h2>
+            <p>The project was architected using Clean Architecture to ensure modularity, testability, and scalability. GetX was adopted for state management, routing, and DI. SQLite enabled offline-first capability, with real-time sync via WebSockets. The system supports deep printer integration, image optimization, watermarking, geofencing, and camera-based order capture. Role-based access and permission controls were enforced. Performance tuning and modular design tackled real-time data consistency, low-end hardware responsiveness, and complex call center/dispatcher workflows.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Impact & Results</h2>
+            <ul class="features-list">
+                <li>Reduced order processing time by 50%</li>
+                <li>Improved order accuracy by 95%</li>
+                <li>Enhanced customer satisfaction through faster service</li>
+                <li>Streamlined kitchen operations and reduced errors</li>
+                <li>Enabled data-driven menu optimization</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ in Flutter spirit by Omer Younas</p>
+        <p>© 2025 All rights reserved</p>
+    </footer>
+</body>
+
+</html>
