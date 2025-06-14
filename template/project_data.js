@@ -88,9 +88,9 @@ const projects = {
 
 
         gallery: [
-            { src: 'lucrum-sales/lucrum-sales-1.jpg', alt: 'Sales Dashboard' },
-            { src: 'lucrum-sales/lucrum-sales-2.jpg', alt: 'Order Management' },
-            { src: 'lucrum-sales/lucrum-sales-3.jpg', alt: 'Customer Management' },
+            // { src: 'lucrum-sales/lucrum-sales-1.jpg', alt: 'Sales Dashboard' },
+            // { src: 'lucrum-sales/lucrum-sales-2.jpg', alt: 'Order Management' },
+            // { src: 'lucrum-sales/lucrum-sales-3.jpg', alt: 'Customer Management' },
         ],
 
         developmentProcess: `Built using Clean Architecture ensuring separation of concerns and maintainability.
@@ -429,9 +429,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-employee-1.jpg', alt: 'Employee Dashboard' },
-            { src: 'lucrum-employee-2.jpg', alt: 'Attendance Management' },
-            { src: 'lucrum-employee-3.jpg', alt: 'Document Management' }
+            // { src: 'lucrum-employee-1.jpg', alt: 'Employee Dashboard' },
+            // { src: 'lucrum-employee-2.jpg', alt: 'Attendance Management' },
+            // { src: 'lucrum-employee-3.jpg', alt: 'Document Management' }
         ],
         developmentProcess: 'Developed using Clean Architecture and GetX for robust state management. The app includes advanced security measures like mock location detection and device-level login binding using UUID.',
         impactResults: [
@@ -496,9 +496,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-bridal-1.jpg', alt: 'Order Management' },
-            { src: 'lucrum-bridal-2.jpg', alt: 'Customer Management' },
-            { src: 'lucrum-bridal-3.jpg', alt: 'Inventory Management' }
+            // { src: 'lucrum-bridal-1.jpg', alt: 'Order Management' },
+            // { src: 'lucrum-bridal-2.jpg', alt: 'Customer Management' },
+            // { src: 'lucrum-bridal-3.jpg', alt: 'Inventory Management' }
         ],
         developmentProcess: 'Built with Clean Architecture and GetX for modular state management. Focus areas included accurate measurement capture, seamless order processing, and a user-centric experience for retail shopkeepers.',
         impactResults: [
@@ -557,9 +557,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-food-1.jpg', alt: 'Home Screen – Restaurant Listing' },
-            { src: 'lucrum-food-2.jpg', alt: 'Live Order Tracking' },
-            { src: 'lucrum-food-3.jpg', alt: 'Order History & Complaints' }
+            // { src: 'lucrum-food-1.jpg', alt: 'Home Screen – Restaurant Listing' },
+            // { src: 'lucrum-food-2.jpg', alt: 'Live Order Tracking' },
+            // { src: 'lucrum-food-3.jpg', alt: 'Order History & Complaints' }
         ],
         developmentProcess: 'Developed using Clean Architecture and GetX for scalable, maintainable code. Focused on real-time experience with WebSockets, Google Maps tracking, and seamless payment integration.',
         impactResults: [
@@ -629,9 +629,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-rider-1.jpg', alt: 'Order Management Interface' },
-            { src: 'lucrum-rider-2.jpg', alt: 'Live Navigation View' },
-            { src: 'lucrum-rider-3.jpg', alt: 'Earnings & History Dashboard' }
+            // { src: 'lucrum-rider-1.jpg', alt: 'Order Management Interface' },
+            // { src: 'lucrum-rider-2.jpg', alt: 'Live Navigation View' },
+            // { src: 'lucrum-rider-3.jpg', alt: 'Earnings & History Dashboard' }
         ],
         developmentProcess: 'Built with Clean Architecture and GetX, the app emphasizes real-time performance, optimized battery usage, and seamless rider UX. WebSocket and background services power uninterrupted delivery operations.',
         impactResults: [
@@ -698,9 +698,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-scanner-1.jpg', alt: 'Live Scanning Interface' },
-            { src: 'lucrum-scanner-2.jpg', alt: 'Data Sync & Offline Queue' },
-            { src: 'lucrum-scanner-3.jpg', alt: 'Scan Summary Dashboard' }
+            // { src: 'lucrum-scanner-1.jpg', alt: 'Live Scanning Interface' },
+            // { src: 'lucrum-scanner-2.jpg', alt: 'Data Sync & Offline Queue' },
+            // { src: 'lucrum-scanner-3.jpg', alt: 'Scan Summary Dashboard' }
         ],
         developmentProcess: 'Built using Clean Architecture with GetX for reactive state handling. Designed for rugged industrial use cases with offline-first architecture, scan reliability, and ERP integration as core pillars.',
         impactResults: [
@@ -770,9 +770,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-weighbridge-1.jpg', alt: 'Live Weight Interface' },
-            { src: 'lucrum-weighbridge-2.jpg', alt: 'Vehicle & Trip Management' },
-            { src: 'lucrum-weighbridge-3.jpg', alt: 'CCTV & Sync Dashboard' }
+            // { src: 'lucrum-weighbridge-1.jpg', alt: 'Live Weight Interface' },
+            // { src: 'lucrum-weighbridge-2.jpg', alt: 'Vehicle & Trip Management' },
+            // { src: 'lucrum-weighbridge-3.jpg', alt: 'CCTV & Sync Dashboard' }
         ],
         developmentProcess: 'Built with Clean Architecture principles using GetX for reactive flows and modularity. Focused on hardware integration, accurate offline data capture, and secure ERP syncing to streamline weighbridge checkpoints.',
         impactResults: [
@@ -840,9 +840,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'lucrum-access-1.jpg', alt: 'Access Control Interface' },
-            { src: 'lucrum-access-2.jpg', alt: 'Attendance Dashboard' },
-            { src: 'lucrum-access-3.jpg', alt: 'Biometric Logs' }
+            // { src: 'lucrum-access-1.jpg', alt: 'Access Control Interface' },
+            // { src: 'lucrum-access-2.jpg', alt: 'Attendance Dashboard' },
+            // { src: 'lucrum-access-3.jpg', alt: 'Biometric Logs' }
         ],
         developmentProcess: 'Built with Clean Architecture and GetX, the system emphasizes low-latency sync, fail-safe offline fallback, and deep hardware-level biometric integration. Designed for high-availability environments with security-first requirements.',
         impactResults: [
@@ -907,9 +907,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'shorasha-consultant-1.jpg', alt: 'Appointments Interface' },
-            { src: 'shorasha-consultant-2.jpg', alt: 'Client Profiles' },
-            { src: 'shorasha-consultant-3.jpg', alt: 'Practice Analytics' }
+            // { src: 'shorasha-consultant-1.jpg', alt: 'Appointments Interface' },
+            // { src: 'shorasha-consultant-2.jpg', alt: 'Client Profiles' },
+            // { src: 'shorasha-consultant-3.jpg', alt: 'Practice Analytics' }
         ],
         developmentProcess: 'Developed using Clean Architecture with BLoC and GetIt, the system prioritizes modularity, maintainability, and security. Focus was on consultant productivity, client confidentiality, and seamless user workflows.',
         impactResults: [
@@ -976,9 +976,9 @@ const projects = {
             }
         ],
         gallery: [
-            { src: 'shorasha-user-1.jpg', alt: 'Consultant Search Interface' },
-            { src: 'shorasha-user-2.jpg', alt: 'Booking System' },
-            { src: 'shorasha-user-3.jpg', alt: 'Appointment Dashboard' }
+            // { src: 'shorasha-user-1.jpg', alt: 'Consultant Search Interface' },
+            // { src: 'shorasha-user-2.jpg', alt: 'Booking System' },
+            // { src: 'shorasha-user-3.jpg', alt: 'Appointment Dashboard' }
         ],
         developmentProcess: 'Built with Clean Architecture using BLoC and GetIt for state and dependency management. The app emphasizes usability, reliability, and real-time experience for both appointment handling and communication.',
         impactResults: [
