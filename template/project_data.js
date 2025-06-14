@@ -10,65 +10,82 @@ const projects = {
         techStack: [
             'Flutter',
             'Dart',
+            'Frappe Framework (ERPNext backend)',
             'BLoC (State Management)',
             'GetIt (Dependency Injection)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
             'WebSockets (Socket.io)',
-            'SQLite (Offline Persistence)',
+            'Hive (Offline Persistence)',
             'Localization',
+            'Google Maps (Navigation & Directions)',
+            'Geolocation & Distance Calculation',
         ],
+
 
         features: [
             {
                 title: 'Sales Team Management',
-                items: ['Assign and monitor team performance and tasks'],
+                items: [
+                    'Assign and monitor team performance',
+                    'Task tracking and delegation'
+                ],
             },
             {
                 title: 'Territory Management',
-                items: ['Allocate sales regions and track progress'],
+                items: [
+                    'Allocate sales regions',
+                    'Monitor progress across territories'
+                ],
             },
             {
                 title: 'Customer Management',
                 items: [
-                    'Manage customer profiles, interactions, and history',
-                    'Credit limit management',
-                    'Customer categorization',
+                    'Manage profiles, interactions, and purchase history',
+                    'Credit limit enforcement',
+                    'Customer segmentation and categorization'
                 ],
             },
             {
                 title: 'Sales Order Management',
                 items: [
-                    'Create, track, and manage sales orders',
-                    'Real-time inventory checking',
-                    'Price management and discounts',
+                    'Create, edit, and track sales orders',
+                    'Real-time inventory and stock validation',
+                    'Price lists, discounts, and approval workflows'
                 ],
             },
             {
                 title: 'Payment Processing',
                 items: [
-                    'Multiple payment methods',
-                    'Payment tracking and reconciliation',
-                    'Receipt generation',
+                    'Support for multiple payment methods',
+                    'Payment tracking and automated reconciliation',
+                    'Instant receipt generation and logs'
                 ],
             },
             {
                 title: 'Route Optimization & Trip Management',
-                items: ['Plan and optimize travel routes for sales visits'],
+                items: [
+                    'Plan and optimize sales routes',
+                    'Track visit history and coverage'
+                ],
             },
             {
                 title: 'Stock Tracking',
-                items: ['Real-time inventory level tracking', 'Low stock alerts'],
+                items: [
+                    'Real-time inventory updates',
+                    'Low stock and expiry alerts'
+                ],
             },
             {
                 title: 'Reporting & Analytics',
                 items: [
-                    'Sales, payment, and performance reports',
-                    'Custom report generation',
+                    'Sales, collection, and team performance reports',
+                    'Custom dashboards and exportable analytics'
                 ],
-            },
+            }
         ],
+
 
         gallery: [
             { src: 'lucrum-sales/lucrum-sales-1.jpg', alt: 'Sales Dashboard' },
@@ -96,13 +113,14 @@ const projects = {
         techStack: [
             'Flutter',
             'Dart',
+            'Frappe Framework (ERPNext backend)',
             'Getx (State Management & Routing & DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'Frappe ERP Integration',
             'Firebase (Notifications, Analytics)',
             'SQLite (Local Storage)',
+            'Geofencing',
             'Localization'
         ],
         features: [
@@ -185,17 +203,17 @@ const projects = {
     'lucrum-order': {
         title: 'Lucrum Order Taking',
         description:
-            'A digital ordering solution designed for waiters and call center agents to streamline restaurant operations.',
-        image: 'lucrum-order/lucrum-order.jpg',
+            'Cross-platform Flutter app (Android & Windows) for creating and managing restaurant orders with role-based workflows.',
+        image: 'lucrum-order/home.png',
         overview:
             'Lucrum Order Taking is an end-to-end digital ordering system built to streamline restaurant operations. Designed with an intuitive interface, it enables staff to efficiently manage dine-in orders, while real-time kitchen updates enhance communication and reduce service delays. The system includes a call center module for managing takeaway and delivery orders, and a dispatcher dashboard for workflow automation, rider assignments, and order tracking.',
         techStack: [
             'Flutter',
             'Dart',
+            'Frappe Framework (ERPNext backend)',
             'Getx (State Management & Routing & DI)',
             'Clean Architecture',
             'SOLID Principles',
-            'Frappe ERP Integration',
             'RESTful APIs',
             'WebSockets (Socket.io)',
             'Firebase (Crashlytics, Analytics)',
@@ -219,6 +237,7 @@ const projects = {
                     'Support for discounts, offers, and time-based promotions'
                 ]
             },
+
             {
                 title: 'Kitchen Display System (KDS) Integration',
                 items: [
@@ -258,12 +277,26 @@ const projects = {
                     'Automatic background synchronization with cloud',
                     'Smart conflict resolution strategies'
                 ]
+            },
+            {
+                title: 'Cross-Platform Responsiveness',
+                items: [
+                    'Android & Windows support',
+                    "Optimized for low-end devices",
+                    "Responsive across all screen sizes",
+                    'Complex call center/dispatcher workflows',
+                ]
             }
         ],
         gallery: [
-            { src: 'lucrum-order/lucrum-order-1.jpg', alt: 'Order Interface' },
-            { src: 'lucrum-order/lucrum-order-2.jpg', alt: 'Menu Management' },
-            { src: 'lucrum-order/lucrum-order-3.jpg', alt: 'Payment Processing' }
+            { src: 'lucrum-order/Home.png', alt: 'Home Menu' },
+            { src: 'lucrum-order/Item customization.png', alt: 'Item Customization' },
+            { src: 'lucrum-order/Customer Creation.png', alt: 'Customer Creation' },
+            { src: 'lucrum-order/Cart.png', alt: 'Cart' },
+            { src: 'lucrum-order/Orders.png', alt: 'Orders' },
+            { src: 'lucrum-order/OrdersTablet.png', alt: 'Orders Tablet' },
+            { src: 'lucrum-order/Order Details.png', alt: 'Order Details' },
+
         ],
         developmentProcess:
             'The project was architected using Clean Architecture to ensure modularity, testability, and scalability. GetX was adopted for state management, routing, and DI. SQLite enabled offline-first capability, with real-time sync via WebSockets. The system supports deep printer integration, image optimization, watermarking, geofencing, and camera-based order capture. Role-based access and permission controls were enforced. Performance tuning and modular design tackled real-time data consistency, low-end hardware responsiveness, and complex call center/dispatcher workflows.',
@@ -279,18 +312,19 @@ const projects = {
     'lucrum-kds': {
         title: 'Lucrum KDS',
         description: 'A kitchen display system (KDS) for real-time order tracking and management.',
-        image: 'lucrum-kds/lucrum-kds.jpg',
+        image: 'lucrum-kds/home.png',
         overview: 'Lucrum KDS is a real-time kitchen display system designed to streamline restaurant kitchen operations. It provides instant order visibility, preparation tracking, and efficient communication between front-of-house and kitchen staff.',
         techStack: [
             'Flutter',
             'Dart',
+            'Frappe Framework (ERPNext backend)',
             'Getx (State Management & Routing & DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
             'WebSockets (Socket.io)',
             'Firebase (Crashlytics, Analytics)',
-            'SQLite (Local Storage)',
+            'Hive (Local Storage)',
             'Localization'
         ],
         features: [
@@ -321,29 +355,13 @@ const projects = {
                     'Status change alerts'
                 ]
             },
-            {
-                title: 'Analytics & Reporting',
-                items: [
-                    'Preparation time analytics',
-                    'Station performance metrics',
-                    'Order volume tracking',
-                    'Peak time analysis'
-                ]
-            }
         ],
         gallery: [
             {
-                src: 'lucrum-kds/lucrum-kds-1.jpg',
+                src: 'lucrum-kds/home.png',
                 alt: 'Kitchen Display Interface'
             },
-            {
-                src: 'lucrum-kds/lucrum-kds-2.jpg',
-                alt: 'Order Management'
-            },
-            {
-                src: 'lucrum-kds/lucrum-kds-3.jpg',
-                alt: 'Analytics Dashboard'
-            }
+
         ],
         developmentProcess: 'The project was developed using Clean Architecture principles with GetX for state management. Special attention was paid to real-time updates and low-latency communication between different parts of the system.',
         impactResults: [
@@ -355,96 +373,90 @@ const projects = {
     },
     'lucrum-employee': {
         title: 'Lucrum Employee App',
-        description: 'A comprehensive employee portal managing HR-related functionalities.',
+        description: 'A workforce management solution with secure attendance, leave, and HR operations.',
         image: 'lucrum-employee.jpg',
-        overview: 'Lucrum Employee App is a comprehensive employee portal designed to streamline HR operations and enhance employee engagement. It provides tools for attendance management, leave requests, document access, and internal communication.',
+        overview: 'Lucrum Employee App streamlines workforce management by enabling employees to mark attendance, apply for leave, and manage HR interactions with ease. Featuring geofencing for accurate location-based check-ins and UUID-based device locking, it ensures data integrity and enhances operational accountability.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
-            'Firebase (Crashlytics, Analytics)',
-            'SQLite (Local Storage)',
+            'Firebase (Notifications, Crashlytics, Analytics)',
+            'Sembast (Local Storage)',
+            'Geofencing',
+            'Device UUID Lock',
+            'Mock Location Protection',
             'Localization'
         ],
         features: [
             {
                 title: 'Employee Management',
                 items: [
-                    'Profile management and updates',
-                    'Document access and storage',
-                    'Personal information management',
-                    'Skills and certifications tracking'
+                    'Profile updates and personal info',
+                    'Access to HR documents',
+                    'Track skills and certifications'
                 ]
             },
             {
-                title: 'Attendance System',
+                title: 'Attendance & Leave',
                 items: [
-                    'Clock in/out functionality',
-                    'Leave request management',
-                    'Attendance history',
-                    'Overtime tracking'
+                    'Clock in/out with geofencing',
+                    'Leave application and tracking',
+                    'Attendance logs and history',
+                    'Overtime management'
                 ]
             },
             {
-                title: 'HR Operations',
+                title: 'HR Tools',
                 items: [
-                    'Leave balance tracking',
+                    'Leave balance insights',
                     'Payroll information access',
-                    'Performance reviews',
-                    'Training and development'
+                    'Performance review tracking',
+                    'Training and development modules'
                 ]
             },
             {
-                title: 'Communication',
+                title: 'Internal Communication',
                 items: [
-                    'Internal messaging system',
-                    'Announcement notifications',
-                    'Department updates',
-                    'Event notifications'
+                    'In-app messaging',
+                    'HR and department announcements',
+                    'Push notifications for updates',
+                    'Company events and alerts'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-employee-1.jpg',
-                alt: 'Employee Dashboard'
-            },
-            {
-                src: 'lucrum-employee-2.jpg',
-                alt: 'Attendance Management'
-            },
-            {
-                src: 'lucrum-employee-3.jpg',
-                alt: 'Document Management'
-            }
+            { src: 'lucrum-employee-1.jpg', alt: 'Employee Dashboard' },
+            { src: 'lucrum-employee-2.jpg', alt: 'Attendance Management' },
+            { src: 'lucrum-employee-3.jpg', alt: 'Document Management' }
         ],
-        developmentProcess: 'The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on security, and data privacy.',
+        developmentProcess: 'Developed using Clean Architecture and GetX for robust state management. The app includes advanced security measures like mock location detection and device-level login binding using UUID.',
         impactResults: [
-            'Reduced HR workload by 50%',
-            'Improved employee satisfaction',
-            'Enhanced communication efficiency',
-            'Streamlined document management'
+            '50% reduction in HR workload',
+            'Improved employee self-service efficiency',
+            'Secure and accurate attendance tracking',
+            'Faster communication and HR response times'
         ]
     },
+
     'lucrum-bridal': {
         title: 'Lucrum Bridal Store',
-        description: 'A specialized order-taking app for clothing and bridal stores.',
+        description: 'An order management solution tailored for bridal and clothing retailers.',
         image: 'lucrum-bridal.jpg',
-        overview: 'Lucrum Bridal Store is a specialized order management system designed for bridal and clothing stores. It streamlines the entire process from customer measurements to order fulfillment, ensuring efficient operations and customer satisfaction.',
+        overview: 'Specifically designed for bridal suit retailers, Lucrum Bridal Store simplifies inventory and order management. Retailers can manage customer profiles, capture detailed measurements, browse a design catalog, and streamline custom order workflows. The app enhances operational efficiency and elevates the customer shopping experience.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
             'Firebase (Crashlytics, Analytics)',
-            'SQLite (Local Storage)',
+            'Hive (Local Storage)',
             'Localization'
         ],
         features: [
@@ -452,600 +464,531 @@ const projects = {
                 title: 'Customer Management',
                 items: [
                     'Customer profile creation',
-                    'Measurement tracking',
+                    'Detailed measurement tracking',
                     'Order history',
-                    'Preference management'
+                    'Preference and style management'
                 ]
             },
             {
                 title: 'Order Management',
                 items: [
-                    'Custom order creation',
-                    'Measurement integration',
-                    'Design selection',
-                    'Fitting scheduling'
+                    'Custom bridal order creation',
+                    'Integrated size specifications',
+                    'Design catalog browsing',
+                    'Fitting and delivery scheduling'
                 ]
             },
             {
-                title: 'Inventory Management',
+                title: 'Inventory & Stock',
                 items: [
-                    'Fabric tracking',
-                    'Design catalog',
-                    'Stock management',
-                    'Supplier integration'
+                    'Fabric and stock tracking',
+                    'Bridal design catalog',
+
                 ]
             },
             {
-                title: 'Payment Processing',
+                title: 'Payment Handling',
                 items: [
-                    'Multiple payment methods',
-                    'Installment tracking',
-                    'Payment scheduling',
-                    'Receipt generation'
+                    'Support for multiple payment modes',
+                    'Installment and due tracking',
+                    'Split payments',
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-bridal-1.jpg',
-                alt: 'Order Management'
-            },
-            {
-                src: 'lucrum-bridal-2.jpg',
-                alt: 'Customer Management'
-            },
-            {
-                src: 'lucrum-bridal-3.jpg',
-                alt: 'Inventory Management'
-            }
+            { src: 'lucrum-bridal-1.jpg', alt: 'Order Management' },
+            { src: 'lucrum-bridal-2.jpg', alt: 'Customer Management' },
+            { src: 'lucrum-bridal-3.jpg', alt: 'Inventory Management' }
         ],
-        developmentProcess: 'The project was developed using Clean Architecture principles with GetX for state management. Special attention was paid to measurement accuracy, order tracking, and customer relationship management.',
+        developmentProcess: 'Built with Clean Architecture and GetX for modular state management. Focus areas included accurate measurement capture, seamless order processing, and a user-centric experience for retail shopkeepers.',
         impactResults: [
             'Reduced order processing time by 45%',
-            'Improved customer satisfaction',
-            'Enhanced inventory management',
-            'Streamlined payment collection'
+            'Enhanced customer experience and satisfaction',
+            'Improved inventory visibility and control',
+            'Simplified payment and installment tracking'
         ]
     },
     'lucrum-food': {
         title: 'Lucrum Food Delivery',
-        description: 'A complete food delivery platform for customers.',
+        description: 'A customer-facing food delivery app with real-time order tracking and seamless UX.',
         image: 'lucrum-food.jpg',
-        overview: 'Lucrum Food Delivery is a comprehensive food delivery platform connecting customers with restaurants. It provides a seamless experience for ordering food, tracking deliveries, and managing restaurant operations.',
+        overview: 'Lucrum Food Delivery is a mobile-first food ordering platform built for end users. It offers a smooth and engaging experience, allowing users to browse nearby restaurants, explore menus, place orders, track rider location in real-time, and manage order history. Inspired by modern delivery standards, it brings reliability, speed, and user convenience to the forefront.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
             'WebSockets (Socket.io)',
-            'Firebase (Crashlytics, Analytics)',
-            'Google Maps API',
-            'MyFatoorah Integration'
+            'Firebase (Crashlytics, Analytics, Notifications)',
+            'Google Maps API (Live Tracking)',
+            'Payment Integrations',
+            'Hive (Local Storage)',
+            'Localization'
         ],
         features: [
             {
-                title: 'Customer Features',
+                title: 'User Experience',
                 items: [
-                    'Restaurant browsing and searching',
-                    'Menu viewing and ordering',
-                    'Real-time order tracking',
-                    'Payment processing'
+                    'Restaurant discovery and search',
+                    'Menu browsing and item customization',
+                    'Cart and order checkout',
+                    'Live order status and rider location tracking',
+                    'Push notifications for status updates'
                 ]
             },
             {
-                title: 'Restaurant Features',
+                title: 'Order Management',
                 items: [
-                    'Order management',
-                    'Menu management',
-                    'Analytics dashboard',
-                    'Performance tracking'
+                    'Order history and reordering',
+                    'Rating and feedback submission',
+                    'Complaint and support ticket creation',
+                    'Refund status visibility'
                 ]
             },
             {
-                title: 'Delivery Management',
-                items: [
-                    'Route optimization',
-                    'Real-time tracking',
-                    'Delivery assignment',
-                    'Status updates'
-                ]
-            },
-            {
-                title: 'Payment System',
+                title: 'Payments',
                 items: [
                     'Multiple payment methods',
-                    'Secure transactions',
-                    'Payment tracking',
-                    'Refund management'
+                    'Transaction history and receipts'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-food-1.jpg',
-                alt: 'Customer Interface'
-            },
-            {
-                src: 'lucrum-food-2.jpg',
-                alt: 'Restaurant Dashboard'
-            },
-            {
-                src: 'lucrum-food-3.jpg',
-                alt: 'Delivery Tracking'
-            }
+            { src: 'lucrum-food-1.jpg', alt: 'Home Screen – Restaurant Listing' },
+            { src: 'lucrum-food-2.jpg', alt: 'Live Order Tracking' },
+            { src: 'lucrum-food-3.jpg', alt: 'Order History & Complaints' }
         ],
-        developmentProcess: 'The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on real-time tracking, payment security, and user experience.',
+        developmentProcess: 'Developed using Clean Architecture and GetX for scalable, maintainable code. Focused on real-time experience with WebSockets, Google Maps tracking, and seamless payment integration.',
         impactResults: [
-            'Increased restaurant orders by 60%',
-            'Reduced delivery time by 35%',
-            'Enhanced customer satisfaction',
-            'Improved restaurant efficiency'
+            'Enhanced customer ordering experience',
+            'Faster delivery visibility with live tracking',
+            'Reduced complaints through better transparency',
+            'Improved app engagement and retention'
         ]
     },
+
     'lucrum-rider': {
         title: 'Lucrum Rider',
-        description: 'A delivery rider application for managing orders and deliveries.',
+        description: 'A smart delivery app for riders to manage, track, and fulfill orders efficiently.',
         image: 'lucrum-rider.jpg',
-        overview: 'Lucrum Rider is a specialized mobile application designed for delivery riders to manage and fulfill orders efficiently. It provides real-time order tracking, route optimization, and seamless communication between riders, restaurants, and customers.',
+        overview: 'Lucrum Rider is a purpose-built delivery application designed to streamline the daily operations of delivery agents. With real-time order updates, integrated navigation, and optimized workflows, it empowers riders to manage deliveries efficiently while ensuring fast, accurate, and transparent customer service.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
-            'Firebase (Crashlytics, Analytics)',
-            'Google Maps API',
-            'Background Location'
+            'WebSockets (Socket.io) – Live Order Sync',
+            'Firebase (Crashlytics, Analytics, Notifications)',
+            'Google Maps API (Navigation & Routing)',
+            'Background Location & Geofencing',
+            'Hive (Local Storage)',
+            'Localization'
         ],
         features: [
             {
                 title: 'Order Management',
                 items: [
-                    'Real-time order notifications',
-                    'Order acceptance and rejection',
-                    'Order status updates',
-                    'Delivery confirmation'
+                    'Instant order notifications',
+                    'Accept/reject workflow',
+                    'Order detail view',
+                    'Status update controls (picked, delivered)'
                 ]
             },
             {
                 title: 'Navigation & Routing',
                 items: [
-                    'Turn-by-turn navigation',
-                    'Route optimization',
-                    'Traffic-aware routing',
-                    'Offline maps support'
+                    'Integrated turn-by-turn navigation',
+                    'Route optimization with live traffic',
+                    'Delivery address mapping',
+                    'Offline fallback support'
                 ]
             },
             {
-                title: 'Location Services',
+                title: 'Rider Location Services',
                 items: [
-                    'Real-time location tracking',
+                    'Real-time GPS tracking',
                     'Background location updates',
-                    'Geofencing support',
-                    'Location sharing'
+                    'Geofence triggers',
+                    'Location sharing with dispatch'
                 ]
             },
             {
-                title: 'Communication',
+                title: 'Rider Experience',
                 items: [
-                    'In-app messaging',
-                    'Call integration',
-                    'Push notifications',
-                    'Status updates'
+                    'Profile and earnings overview',
+                    'Order history access',
+                    'Support contact & resources',
+                    'Push notifications and status alerts'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-rider-1.jpg',
-                alt: 'Order Management'
-            },
-            {
-                src: 'lucrum-rider-2.jpg',
-                alt: 'Navigation'
-            },
-            {
-                src: 'lucrum-rider-3.jpg',
-                alt: 'Earnings Dashboard'
-            }
+            { src: 'lucrum-rider-1.jpg', alt: 'Order Management Interface' },
+            { src: 'lucrum-rider-2.jpg', alt: 'Live Navigation View' },
+            { src: 'lucrum-rider-3.jpg', alt: 'Earnings & History Dashboard' }
         ],
-        developmentProcess: 'The project was developed using Clean Architecture principles with GetX for state management. Special attention was paid to battery optimization, real-time tracking, and offline functionality.',
+        developmentProcess: 'Built with Clean Architecture and GetX, the app emphasizes real-time performance, optimized battery usage, and seamless rider UX. WebSocket and background services power uninterrupted delivery operations.',
         impactResults: [
-            'Reduced delivery time by 25%',
-            'Improved rider efficiency',
-            'Enhanced customer satisfaction',
-            'Increased rider earnings'
+            '25% faster delivery turnaround',
+            'Higher rider productivity and satisfaction',
+            'Reduced missed deliveries and delays',
+            'Improved customer experience through accurate ETAs'
         ]
     },
+
     'lucrum-scanner': {
         title: 'Lucrum Scanner',
-        description: 'A factory utility for scanning items and syncing data with ERP systems.',
+        description: 'A factory-grade scanning utility for real-time ERP sync and offline operations.',
         image: 'lucrum-scanner.jpg',
-        overview: 'Lucrum Scanner is a specialized utility application designed for factory operations, enabling efficient barcode scanning and data synchronization with ERP systems. It streamlines inventory management and quality control processes.',
+        overview: 'Lucrum Scanner is a purpose-built application for factory environments, enabling fast and accurate barcode/QR code scanning with robust offline storage and seamless ERP integration. Designed for carton and item scanning machines, it supports high-volume batch scanning while ensuring data integrity and operational continuity.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
             'Firebase (Crashlytics, Analytics)',
-            'Barcode Scanner Integration',
-            'ERPNext Integration'
+            'Local Database (Hive/Sembast)',
+            'Offline-first Architecture'
         ],
         features: [
             {
                 title: 'Scanning Operations',
                 items: [
-                    'Barcode and QR code scanning',
-                    'Batch scanning support',
-                    'Offline scanning capability',
-                    'Scan validation'
+                    'Fast barcode/QR scanning',
+                    'Batch & continuous scan mode',
+                    'Offline-first support',
+                    'Validation and duplicate detection'
                 ]
             },
             {
-                title: 'Data Management',
+                title: 'Data Handling',
                 items: [
-                    'Real-time data synchronization',
-                    'Offline data storage',
-                    'Conflict resolution',
-                    'Data validation'
+                    'Local database with sync queue',
+                    'Auto sync on connectivity',
+                    'Conflict resolution logic',
+                    'Real-time data validation'
                 ]
             },
             {
-                title: 'ERP Integration',
+                title: 'ERP Sync',
                 items: [
-                    'Seamless ERPNext integration',
-                    'Real-time updates',
-                    'Data consistency checks',
-                    'Error handling'
+                    'Real-time ERPNext updates',
+                    'Reliable sync engine',
+                    'Error capture and retry mechanism',
+                    'Consistency validation'
                 ]
             },
             {
-                title: 'Reporting',
+                title: 'Insights & Reports',
                 items: [
-                    'Scan statistics',
-                    'Error reports',
+                    'Daily scan logs',
+                    'Error reporting & diagnostics',
                     'Performance metrics',
-                    'Export capabilities'
+                    'Export (CSV/PDF) capabilities'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-scanner-1.jpg',
-                alt: 'Scanning Interface'
-            },
-            {
-                src: 'lucrum-scanner-2.jpg',
-                alt: 'Data Management'
-            },
-            {
-                src: 'lucrum-scanner-3.jpg',
-                alt: 'Reporting Dashboard'
-            }
+            { src: 'lucrum-scanner-1.jpg', alt: 'Live Scanning Interface' },
+            { src: 'lucrum-scanner-2.jpg', alt: 'Data Sync & Offline Queue' },
+            { src: 'lucrum-scanner-3.jpg', alt: 'Scan Summary Dashboard' }
         ],
-        developmentProcess: 'The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on scanning accuracy, offline functionality, and ERP integration.',
+        developmentProcess: 'Built using Clean Architecture with GetX for reactive state handling. Designed for rugged industrial use cases with offline-first architecture, scan reliability, and ERP integration as core pillars.',
         impactResults: [
-            'Increased scanning efficiency by 70%',
-            'Reduced data entry errors by 95%',
-            'Improved inventory accuracy',
-            'Enhanced ERP system integration'
+            '70% faster scanning in production lines',
+            '95% reduction in manual data errors',
+            'Zero data loss with offline queueing',
+            'Streamlined ERP sync and inventory updates'
         ]
     },
+
     'lucrum-weighbridge': {
         title: 'Lucrum WeighBridge',
-        description: 'A specialized utility app for weighbridges to manage and log weight data.',
+        description: 'Offline-first weighbridge system with ERP & machine integration.',
         image: 'lucrum-weighbridge.jpg',
-        overview: 'Lucrum WeighBridge is a specialized application designed for weighbridge operations, enabling efficient weight measurement, data logging, and integration with ERP systems. It streamlines the process of vehicle weight monitoring at checkposts.',
+        overview: 'Lucrum WeighBridge is a Windows-based industrial-grade application designed to capture real-time truck weight data from weighbridge machines, log it securely, and sync with ERP systems. It supports offline-first workflows, CCTV camera feeds, and full audit trails, ensuring operational continuity and data accuracy at loading/unloading stations.',
         techStack: [
-            'Flutter',
+            'Flutter (Windows Build)',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
             'WebSockets (Socket.io)',
             'Firebase (Crashlytics, Analytics)',
-            'Weighbridge Integration',
-            'ERPNext Integration'
+            'Native Serial Port Integration (Weighbridge)',
+            'Offline-first Architecture (SQLite/Isar)',
+            'CCTV Camera Integration',
+            'ERPNext Sync'
         ],
         features: [
             {
-                title: 'Weight Management',
+                title: 'Weighing Operations',
                 items: [
-                    'Real-time weight measurement',
-                    'Weight validation',
-                    'Multiple weight types',
-                    'Calibration support'
+                    'Live weight capture from weighbridge',
+                    'Gross/Tare/Net weight calculation',
+                    'Auto/manual validation',
+                    'Calibration logs'
                 ]
             },
             {
-                title: 'Vehicle Management',
+                title: 'Vehicle & Trip Logging',
                 items: [
-                    'Vehicle registration',
-                    'Driver information',
-                    'Trip tracking',
-                    'Document management'
+                    'Vehicle & driver registration',
+                    'Trip and load tracking',
+                    'Attach weight to delivery note or item',
+                    'Document and license capture'
                 ]
             },
             {
-                title: 'Data Management',
+                title: 'Offline-first Data Handling',
                 items: [
-                    'Weight data logging',
-                    'Offline data storage',
-                    'Data synchronization',
-                    'Report generation'
+                    'Local weight log storage',
+                    'Auto-sync to ERPNext when online',
+                    'Sync conflict resolution',
+                    'Audit trail for each record'
                 ]
             },
             {
-                title: 'Integration',
+                title: 'Integrations',
                 items: [
-                    'ERP system integration',
-                    'Printer integration',
-                    'Camera integration',
-                    'External system connectivity'
+                    'Weighbridge machine (serial port/USB)',
+                    'ERPNext for DN & stock entry sync',
+                    'CCTV camera snapshots',
+                    'Thermal/receipt printer support'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-weighbridge-1.jpg',
-                alt: 'Weight Measurement'
-            },
-            {
-                src: 'lucrum-weighbridge-2.jpg',
-                alt: 'Vehicle Management'
-            },
-            {
-                src: 'lucrum-weighbridge-3.jpg',
-                alt: 'Data Dashboard'
-            }
+            { src: 'lucrum-weighbridge-1.jpg', alt: 'Live Weight Interface' },
+            { src: 'lucrum-weighbridge-2.jpg', alt: 'Vehicle & Trip Management' },
+            { src: 'lucrum-weighbridge-3.jpg', alt: 'CCTV & Sync Dashboard' }
         ],
-        developmentProcess: 'The project was developed using Clean Architecture principles with GetX for state management. Special attention was paid to measurement accuracy, data integrity, and system integration.',
+        developmentProcess: 'Built with Clean Architecture principles using GetX for reactive flows and modularity. Focused on hardware integration, accurate offline data capture, and secure ERP syncing to streamline weighbridge checkpoints.',
         impactResults: [
-            'Improved measurement accuracy',
-            'Reduced processing time by 60%',
-            'Enhanced data reliability',
-            'Streamlined operations'
+            '60% faster truck processing',
+            'Real-time ERP weight logging',
+            'Near-zero weight logging errors',
+            'Full traceability via CCTV & audit logs'
         ]
     },
     'lucrum-access': {
         title: 'Lucrum Access Control',
-        description: 'A ZKTeco biometric integration with Frappe ERP.',
+        description: 'Biometric access and attendance system with ERPNext integration.',
         image: 'lucrum-access.jpg',
-        overview: 'Lucrum Access Control is a specialized application that integrates ZKTeco biometric systems with Frappe ERP, providing comprehensive access control and attendance management solutions.',
+        overview: 'Lucrum Access Control is a powerful biometric and access management system that integrates ZKTeco hardware (fingerprint, face, RFID) with Frappe ERP. Built for security-critical environments, it automates attendance, restricts access based on policies, and syncs data with HR modules in real-time.',
         techStack: [
-            'Flutter',
+            'Flutter (Desktop + Android)',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'GetX (State Management, Routing, DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
             'WebSockets (Socket.io)',
+            'ZKTeco SDK (Face, Finger, RFID)',
             'Firebase (Crashlytics, Analytics)',
-            'ZKTeco SDK Integration',
-            'Frappe Integration'
+            'Frappe ERP Integration',
+            'Offline-first Support'
         ],
         features: [
             {
                 title: 'Biometric Integration',
                 items: [
-                    'Fingerprint recognition',
-                    'Face recognition',
-                    'Card-based access',
-                    'Multi-device support'
+                    'Fingerprint & face recognition',
+                    'RFID/card-based login',
+                    'Multi-device sync',
+                    'Local log fallback in case of network loss'
                 ]
             },
             {
                 title: 'Access Control',
                 items: [
-                    'Door access management',
-                    'Time-based access',
-                    'Area restrictions',
-                    'Access logs'
+                    'Time-slot based entry',
+                    'Location-based door control',
+                    'Restricted zone policies',
+                    'Full access logs with tamper alerts'
                 ]
             },
             {
-                title: 'Attendance Management',
+                title: 'Attendance Automation',
                 items: [
-                    'Automated attendance tracking',
-                    'Leave management',
-                    'Overtime calculation',
-                    'Report generation'
+                    'Auto punch-in/out logging',
+                    'Overtime and leave tracking',
+                    'Department-level filters',
+                    'Compliance-ready reports'
                 ]
             },
             {
                 title: 'ERP Integration',
                 items: [
-                    'Real-time data sync',
-                    'Employee management',
-                    'Department integration',
-                    'Report automation'
+                    'Real-time Frappe HR sync',
+                    'Employee & shift management',
+                    'Trigger-based record syncing',
+                    'Custom report generation'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'lucrum-access-1.jpg',
-                alt: 'Access Control'
-            },
-            {
-                src: 'lucrum-access-2.jpg',
-                alt: 'Attendance Management'
-            },
-            {
-                src: 'lucrum-access-3.jpg',
-                alt: 'Integration Dashboard'
-            }
+            { src: 'lucrum-access-1.jpg', alt: 'Access Control Interface' },
+            { src: 'lucrum-access-2.jpg', alt: 'Attendance Dashboard' },
+            { src: 'lucrum-access-3.jpg', alt: 'Biometric Logs' }
         ],
-        developmentProcess: 'The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on biometric integration, real-time synchronization, and security.',
+        developmentProcess: 'Built with Clean Architecture and GetX, the system emphasizes low-latency sync, fail-safe offline fallback, and deep hardware-level biometric integration. Designed for high-availability environments with security-first requirements.',
         impactResults: [
-            'Improved access control efficiency',
-            'Reduced manual attendance errors',
-            'Enhanced security measures',
-            'Streamlined HR operations'
+            'Eliminated manual attendance entry',
+            'Reduced unauthorized access incidents by 90%',
+            'Streamlined HR record keeping',
+            'Automated compliance reporting'
         ]
     },
     'shorasha-consultant': {
         title: 'Shorasha Consultant',
-        description: 'A platform for consultants to manage appointments, schedules, and client interactions.',
+        description: 'A consultancy management app for appointments, clients, and practice analytics.',
         image: 'shorasha-consultant.jpg',
-        overview: 'Shorasha Consultant is a comprehensive platform designed for consultants to manage their practice efficiently. It provides tools for appointment scheduling, client management, and practice analytics.',
+        overview: 'Shorasha Consultant is a professional-grade platform tailored for consultants to manage their appointments, clients, and operations. It includes scheduling tools, session tracking, client communication, and real-time practice insights — all in one seamless app.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'BLoC & GetIt (State Management & DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
-            'Firebase (Crashlytics, Analytics)',
-            'Localization',
-            'Push Notifications'
+            'Firebase (Notifications, Analytics)',
+            'In-App Calendar & Localization'
         ],
         features: [
             {
                 title: 'Appointment Management',
                 items: [
-                    'Schedule management',
-                    'Appointment booking',
+                    'Real-time appointment booking',
                     'Calendar integration',
-                    'Reminder system'
+                    'Automated reminders',
+                    'Multi-day and recurring sessions'
                 ]
             },
             {
                 title: 'Client Management',
                 items: [
-                    'Client profiles',
-                    'Session history',
-                    'Notes and records',
-                    'Document management'
+                    'Detailed client profiles',
+                    'Session & treatment history',
+                    'Encrypted notes and attachments',
+                    'Consent & document handling'
                 ]
             },
             {
                 title: 'Practice Management',
                 items: [
-                    'Revenue tracking',
-                    'Performance analytics',
-                    'Resource management',
-                    'Report generation'
+                    'Revenue dashboards',
+                    'Consultation analytics',
+                    'Session-based billing',
+                    'Reports & exports'
                 ]
             },
             {
-                title: 'Communication',
+                title: 'Communication & Engagement',
                 items: [
-                    'In-app messaging',
-                    'Email integration',
-                    'Notification system',
-                    'Client feedback'
+                    'In-app chat',
+                    'Push/email notifications',
+                    'Feedback forms',
+                    'Secure message history'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'shorasha-consultant-1.jpg',
-                alt: 'Appointment Management'
-            },
-            {
-                src: 'shorasha-consultant-2.jpg',
-                alt: 'Client Management'
-            },
-            {
-                src: 'shorasha-consultant-3.jpg',
-                alt: 'Analytics Dashboard'
-            }
+            { src: 'shorasha-consultant-1.jpg', alt: 'Appointments Interface' },
+            { src: 'shorasha-consultant-2.jpg', alt: 'Client Profiles' },
+            { src: 'shorasha-consultant-3.jpg', alt: 'Practice Analytics' }
         ],
-        developmentProcess: 'The project was developed using Clean Architecture principles with GetX for state management. Special attention was paid to appointment scheduling, client privacy, and practice management features.',
+        developmentProcess: 'Developed using Clean Architecture with BLoC and GetIt, the system prioritizes modularity, maintainability, and security. Focus was on consultant productivity, client confidentiality, and seamless user workflows.',
         impactResults: [
-            'Increased appointment efficiency',
-            'Improved client satisfaction',
-            'Enhanced practice management',
-            'Streamlined communication'
+            'Reduced no-shows by 40% via auto reminders',
+            'Boosted client retention through better engagement',
+            'Simplified recordkeeping and compliance',
+            'Improved operational efficiency for consultants'
         ]
     },
+
     'shorasha-user': {
         title: 'Shorasha User',
-        description: 'An end-user application enabling customers to book and manage consultant appointments seamlessly.',
+        description: 'A client app for discovering consultants, booking sessions, and managing appointments with ease.',
         image: 'shorasha-user.jpg',
-        overview: 'Shorasha User is a client-facing application that enables users to book and manage appointments with consultants. It provides a seamless experience for finding consultants, scheduling sessions, and managing appointments.',
+        overview: 'Shorasha User is a seamless end-user application that empowers clients to discover consultants, schedule sessions, and manage appointments efficiently. It integrates payments, real-time notifications, and communication tools for a smooth consultation experience.',
         techStack: [
             'Flutter',
             'Dart',
-            'Getx (State Management & Routing & DI)',
+            'Frappe Framework (ERPNext backend)',
+            'BLoC & GetIt (State Management & DI)',
             'Clean Architecture',
             'SOLID Principles',
             'RESTful APIs',
-            'WebSockets (Socket.io)',
-            'Firebase (Crashlytics, Analytics)',
-            'Localization',
-            'Push Notifications'
+            'Firebase (Notifications, Analytics)',
+            'In-App Calendar & Localization',
+            'MyFatoorah (Payment Gateway)'
         ],
         features: [
             {
                 title: 'Consultant Discovery',
                 items: [
-                    'Search and filtering',
-                    'Profile viewing',
-                    'Specialization browsing',
-                    'Rating and reviews'
+                    'Advanced search and filtering',
+                    'View consultant profiles',
+                    'Browse by specialization',
+                    'Ratings and reviews system'
                 ]
             },
             {
                 title: 'Appointment Booking',
                 items: [
-                    'Schedule viewing',
-                    'Online booking',
-                    'Payment processing',
-                    'Confirmation system'
+                    'Real-time schedule availability',
+                    'Instant booking confirmation',
+                    'Secure payment integration',
+                    'Multi-timezone support'
                 ]
             },
             {
                 title: 'Session Management',
                 items: [
-                    'Appointment history',
-                    'Session notes',
+                    'Past & upcoming appointments',
+                    'Session notes & attachments',
                     'Document access',
-                    'Feedback system'
+                    'Post-session feedback'
                 ]
             },
             {
-                title: 'Communication',
+                title: 'Communication Tools',
                 items: [
-                    'In-app messaging',
-                    'Video call integration',
-                    'Notification system',
-                    'Reminder service'
+                    'In-app chat',
+                    'Video consultation support',
+                    'Push notifications & reminders',
+                    'Consultant-client message history'
                 ]
             }
         ],
         gallery: [
-            {
-                src: 'shorasha-user-1.jpg',
-                alt: 'Consultant Search'
-            },
-            {
-                src: 'shorasha-user-2.jpg',
-                alt: 'Appointment Booking'
-            },
-            {
-                src: 'shorasha-user-3.jpg',
-                alt: 'Session Management'
-            }
+            { src: 'shorasha-user-1.jpg', alt: 'Consultant Search Interface' },
+            { src: 'shorasha-user-2.jpg', alt: 'Booking System' },
+            { src: 'shorasha-user-3.jpg', alt: 'Appointment Dashboard' }
         ],
-        developmentProcess: 'The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on user experience, appointment scheduling, and communication features.',
+        developmentProcess: 'Built with Clean Architecture using BLoC and GetIt for state and dependency management. The app emphasizes usability, reliability, and real-time experience for both appointment handling and communication.',
         impactResults: [
-            'Improved booking efficiency',
-            'Enhanced user satisfaction',
-            'Increased appointment completion',
-            'Better client-consultant communication'
+            'Boosted booking success rate by 45%',
+            'Improved user retention and satisfaction',
+            'Minimized no-shows via reminders',
+            'Streamlined client-consultant interactions'
         ]
     }
+
 };
 
 module.exports = projects; 

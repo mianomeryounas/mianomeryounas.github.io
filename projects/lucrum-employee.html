@@ -88,17 +88,24 @@
         .project-image {
             width: 100%;
             max-height: 500px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 15px;
             margin-bottom: 2rem;
         }
 
         .project-section {
-            background: var(--card-bg);
+            background: linear-gradient(145deg, var(--card-bg), #ffffff);
             padding: 2rem;
             border-radius: 15px;
             margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .project-section:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.8);
         }
 
         h2 {
@@ -122,33 +129,116 @@
 
         .features-list {
             list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
         }
 
         .features-list li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
+            background: linear-gradient(145deg, var(--card-bg), #ffffff);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
             position: relative;
+            padding-left: 2.5rem;
+
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .features-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+            border-color: var(--accent);
         }
 
         .features-list li::before {
-            content: "•";
+            content: "→";
             color: var(--accent);
             position: absolute;
-            left: 0;
+            left: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .features-list li:hover::before {
+            transform: translateX(5px);
+        }
+
+        .gallery-container {
+            position: relative;
+            margin: 2rem 0;
+            overflow: hidden;
         }
 
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            transition: transform 0.5s ease;
             gap: 1rem;
-            margin-top: 1rem;
         }
 
         .gallery img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: 400px;
+            object-fit: contain;
             border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .gallery-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .gallery-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .gallery-dot.active {
+            background: white;
+        }
+
+        .gallery-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s ease;
+        }
+
+        .gallery-arrow:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .gallery-arrow.prev {
+            left: 20px;
+        }
+
+        .gallery-arrow.next {
+            right: 20px;
         }
 
         footer {
@@ -174,8 +264,13 @@
                 gap: 1rem;
             }
 
-            .gallery {
+            .features-list {
                 grid-template-columns: 1fr;
+            }
+
+            .gallery-arrow {
+                width: 30px;
+                height: 30px;
             }
         }
     </style>
@@ -195,7 +290,7 @@
     <main>
         <div class="project-header">
             <h1>Lucrum Employee App</h1>
-            <p>A comprehensive employee portal managing HR-related functionalities.</p>
+            <p>A workforce management solution with secure attendance, leave, and HR operations.</p>
             <!-- <div class="project-meta">
                 <a href="#">View on GitHub</a>
                 <a href="#">Live Demo</a>
@@ -206,7 +301,7 @@
 
         <div class="project-section">
             <h2>Project Overview</h2>
-            <p>Lucrum Employee App is a comprehensive employee portal designed to streamline HR operations and enhance employee engagement. It provides tools for attendance management, leave requests, document access, and internal communication.</p>
+            <p>Lucrum Employee App streamlines workforce management by enabling employees to mark attendance, apply for leave, and manage HR interactions with ease. Featuring geofencing for accurate location-based check-ins and UUID-based device locking, it ensures data integrity and enhances operational accountability.</p>
         </div>
 
         <div class="project-section">
@@ -214,13 +309,16 @@
             <div class="tech-stack">
                 <span class="tech-item">Flutter</span>
                 <span class="tech-item">Dart</span>
-                <span class="tech-item">Getx (State Management & Routing & DI)</span>
+                <span class="tech-item">Frappe Framework (ERPNext backend)</span>
+                <span class="tech-item">GetX (State Management, Routing, DI)</span>
                 <span class="tech-item">Clean Architecture</span>
                 <span class="tech-item">SOLID Principles</span>
                 <span class="tech-item">RESTful APIs</span>
-                <span class="tech-item">WebSockets (Socket.io)</span>
-                <span class="tech-item">Firebase (Crashlytics, Analytics)</span>
-                <span class="tech-item">SQLite (Local Storage)</span>
+                <span class="tech-item">Firebase (Notifications, Crashlytics, Analytics)</span>
+                <span class="tech-item">Sembast (Local Storage)</span>
+                <span class="tech-item">Geofencing</span>
+                <span class="tech-item">Device UUID Lock</span>
+                <span class="tech-item">Mock Location Protection</span>
                 <span class="tech-item">Localization</span>
             </div>
         </div>
@@ -231,37 +329,36 @@
                 
                 <li>Employee Management
                     <ul class="features-list">
-                        <li>Profile management and updates</li>
-                        <li>Document access and storage</li>
-                        <li>Personal information management</li>
-                        <li>Skills and certifications tracking</li>
+                        <li>Profile updates and personal info</li>
+                        <li>Access to HR documents</li>
+                        <li>Track skills and certifications</li>
                     </ul>
                 </li>
 
-                <li>Attendance System
+                <li>Attendance & Leave
                     <ul class="features-list">
-                        <li>Clock in/out functionality</li>
-                        <li>Leave request management</li>
-                        <li>Attendance history</li>
-                        <li>Overtime tracking</li>
+                        <li>Clock in/out with geofencing</li>
+                        <li>Leave application and tracking</li>
+                        <li>Attendance logs and history</li>
+                        <li>Overtime management</li>
                     </ul>
                 </li>
 
-                <li>HR Operations
+                <li>HR Tools
                     <ul class="features-list">
-                        <li>Leave balance tracking</li>
+                        <li>Leave balance insights</li>
                         <li>Payroll information access</li>
-                        <li>Performance reviews</li>
-                        <li>Training and development</li>
+                        <li>Performance review tracking</li>
+                        <li>Training and development modules</li>
                     </ul>
                 </li>
 
-                <li>Communication
+                <li>Internal Communication
                     <ul class="features-list">
-                        <li>Internal messaging system</li>
-                        <li>Announcement notifications</li>
-                        <li>Department updates</li>
-                        <li>Event notifications</li>
+                        <li>In-app messaging</li>
+                        <li>HR and department announcements</li>
+                        <li>Push notifications for updates</li>
+                        <li>Company events and alerts</li>
                     </ul>
                 </li>
             </ul>
@@ -269,25 +366,32 @@
 
         <div class="project-section">
             <h2>Project Gallery</h2>
-            <div class="gallery">
-                <img src="../assets/images/lucrum-employee-1.jpg" alt="Employee Dashboard">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="../assets/images/lucrum-employee-1.jpg" alt="Employee Dashboard">
                 <img src="../assets/images/lucrum-employee-2.jpg" alt="Attendance Management">
                 <img src="../assets/images/lucrum-employee-3.jpg" alt="Document Management">
+                </div>
+                <div class="gallery-nav">
+                    <!-- Dots will be added dynamically via JavaScript -->
+                </div>
+                <div class="gallery-arrow prev">←</div>
+                <div class="gallery-arrow next">→</div>
             </div>
         </div>
 
         <div class="project-section">
             <h2>Development Process</h2>
-            <p>The project was built using Clean Architecture principles with GetX for state management. Special focus was placed on security, data privacy, and offline functionality.</p>
+            <p>Developed using Clean Architecture and GetX for robust state management. The app includes advanced security measures like mock location detection and device-level login binding using UUID.</p>
         </div>
 
         <div class="project-section">
             <h2>Impact & Results</h2>
             <ul class="features-list">
-                <li>Reduced HR workload by 50%</li>
-                <li>Improved employee satisfaction</li>
-                <li>Enhanced communication efficiency</li>
-                <li>Streamlined document management</li>
+                <li>50% reduction in HR workload</li>
+                <li>Improved employee self-service efficiency</li>
+                <li>Secure and accurate attendance tracking</li>
+                <li>Faster communication and HR response times</li>
             </ul>
         </div>
     </main>
@@ -296,6 +400,62 @@
         <p>Made with ❤️ in Flutter spirit by Omer Younas</p>
         <p>© 2025 All rights reserved</p>
     </footer>
+
+    <script>
+        // Gallery functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const gallery = document.querySelector('.gallery');
+            const dotsContainer = document.querySelector('.gallery-nav');
+            const prevBtn = document.querySelector('.gallery-arrow.prev');
+            const nextBtn = document.querySelector('.gallery-arrow.next');
+            const images = gallery.querySelectorAll('img');
+
+            let currentIndex = 0;
+
+            // Create dots
+            images.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('gallery-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = dotsContainer.querySelectorAll('.gallery-dot');
+
+            function updateGallery() {
+                const offset = -currentIndex * 100;
+                gallery.style.transform = `translateX(${offset}%)`;
+
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                updateGallery();
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateGallery();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateGallery();
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Optional: Auto-advance slides every 5 seconds
+            setInterval(nextSlide, 5000);
+        });
+    </script>
 </body>
 
 </html>
