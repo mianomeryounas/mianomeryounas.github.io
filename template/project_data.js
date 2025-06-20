@@ -2,7 +2,7 @@ const projects = {
     'lucrum-sales': {
         title: 'Lucrum Sales',
         description: 'Comprehensive sales management solution handling customers, sales orders, payments, stock, reports, and sales team operations.',
-        image: 'lucrum-sales/lucrum-sales.jpg',
+        image: 'lucrum-sales/sales_cover.png',
         overview: `The Lucrum Sales App is a comprehensive mobile solution designed to manage and streamline sales operations.
       It offers tools for sales team management, territory allocation, customer management, order processing, payments, and stock tracking.
       Features route optimization, trip management, and detailed reporting enabling real-time activity tracking.`,
@@ -88,9 +88,9 @@ const projects = {
 
 
         gallery: [
-            // { src: 'lucrum-sales/lucrum-sales-1.jpg', alt: 'Sales Dashboard' },
-            // { src: 'lucrum-sales/lucrum-sales-2.jpg', alt: 'Order Management' },
-            // { src: 'lucrum-sales/lucrum-sales-3.jpg', alt: 'Customer Management' },
+            { src: 'lucrum-sales/territory.jpg', alt: 'Territory Management' },
+            { src: 'lucrum-sales/customer.jpg', alt: 'Customer Management' },
+            { src: 'lucrum-sales/customerstock.jpg', alt: 'Customer Stock Management' },
         ],
 
         developmentProcess: `Built using Clean Architecture ensuring separation of concerns and maintainability.
@@ -108,7 +108,7 @@ const projects = {
     'lucops': {
         title: 'LucOPS',
         description: 'An operational management tool for shops, enabling KPI tracking, task assignments, and reporting.',
-        image: 'lucops/lucops.png',
+        image: 'lucops/cover.png',
         overview: 'LucOPS is a comprehensive operational management tool tailored for retail shops and businesses, focusing on KPI tracking, task management, and on-site audits to optimize workflows and boost productivity. The app supports CCTV monitoring and detailed reporting to enhance accountability and operational oversight.',
         techStack: [
             'Flutter',
@@ -374,7 +374,7 @@ const projects = {
     'lucrum-employee': {
         title: 'Lucrum Employee App',
         description: 'A workforce management solution with secure attendance, leave, and HR operations.',
-        image: 'lucrum-employee.jpg',
+        image: 'lucrum-employee/cover.png',
         overview: 'Lucrum Employee App streamlines workforce management by enabling employees to mark attendance, apply for leave, and manage HR interactions with ease. Featuring geofencing for accurate location-based check-ins and UUID-based device locking, it ensures data integrity and enhances operational accountability.',
         techStack: [
             'Flutter',
@@ -429,9 +429,13 @@ const projects = {
             }
         ],
         gallery: [
-            // { src: 'lucrum-employee-1.jpg', alt: 'Employee Dashboard' },
-            // { src: 'lucrum-employee-2.jpg', alt: 'Attendance Management' },
-            // { src: 'lucrum-employee-3.jpg', alt: 'Document Management' }
+            { src: 'lucrum-employee/home.jpg', alt: 'Employee Dashboard' },
+            { src: 'lucrum-employee/attendance.jpg', alt: 'Attendance Management' },
+            { src: 'lucrum-employee/leave.jpg', alt: 'Leave Application' },
+            { src: 'lucrum-employee/leaves.jpg', alt: 'Leave Management' },
+            { src: 'lucrum-employee/profiles.jpg', alt: 'Profile Management' }
+
+
         ],
         developmentProcess: 'Developed using Clean Architecture and GetX for robust state management. The app includes advanced security measures like mock location detection and device-level login binding using UUID.',
         impactResults: [
@@ -445,7 +449,7 @@ const projects = {
     'lucrum-bridal': {
         title: 'Lucrum Bridal Store',
         description: 'An order management solution tailored for bridal and clothing retailers.',
-        image: 'lucrum-bridal.jpg',
+        image: 'bridal/cover.png',
         overview: 'Specifically designed for bridal suit retailers, Lucrum Bridal Store simplifies inventory and order management. Retailers can manage customer profiles, capture detailed measurements, browse a design catalog, and streamline custom order workflows. The app enhances operational efficiency and elevates the customer shopping experience.',
         techStack: [
             'Flutter',
@@ -496,9 +500,14 @@ const projects = {
             }
         ],
         gallery: [
-            // { src: 'lucrum-bridal-1.jpg', alt: 'Order Management' },
-            // { src: 'lucrum-bridal-2.jpg', alt: 'Customer Management' },
-            // { src: 'lucrum-bridal-3.jpg', alt: 'Inventory Management' }
+            { src: 'bridal/menu.png', alt: 'Home Menu Management' },
+            { src: 'bridal/customer.png', alt: 'Customer Management' },
+            { src: 'bridal/customer_creation.png', alt: 'Customer Creation' },
+            { src: 'bridal/Sizing.png', alt: 'Sizing Management' },
+            { src: 'bridal/specification.png', alt: 'Specifications Management' },
+            { src: 'bridal/cart.png', alt: 'Cart' },
+            { src: 'bridal/sign.png', alt: 'Customer Signature' },
+            { src: 'bridal/payment.png', alt: 'Payment Management' },
         ],
         developmentProcess: 'Built with Clean Architecture and GetX for modular state management. Focus areas included accurate measurement capture, seamless order processing, and a user-centric experience for retail shopkeepers.',
         impactResults: [
@@ -511,7 +520,7 @@ const projects = {
     'lucrum-food': {
         title: 'Lucrum Food Delivery',
         description: 'A customer-facing food delivery app with real-time order tracking and seamless UX.',
-        image: 'lucrum-food.jpg',
+        image: 'lucrum-delivery/cover.png',
         overview: 'Lucrum Food Delivery is a mobile-first food ordering platform built for end users. It offers a smooth and engaging experience, allowing users to browse nearby restaurants, explore menus, place orders, track rider location in real-time, and manage order history. Inspired by modern delivery standards, it brings reliability, speed, and user convenience to the forefront.',
         techStack: [
             'Flutter',
@@ -785,7 +794,7 @@ const projects = {
     'lucrum-access': {
         title: 'Lucrum Access Control',
         description: 'Biometric access and attendance system with ERPNext integration.',
-        image: 'lucrum-access.jpg',
+        image: 'access-control/home.png',
         overview: 'Lucrum Access Control is a powerful biometric and access management system that integrates ZKTeco hardware (fingerprint, face, RFID) with Frappe ERP. Built for security-critical environments, it automates attendance, restricts access based on policies, and syncs data with HR modules in real-time.',
         techStack: [
             'Flutter (Desktop + Android)',
@@ -840,9 +849,11 @@ const projects = {
             }
         ],
         gallery: [
-            // { src: 'lucrum-access-1.jpg', alt: 'Access Control Interface' },
-            // { src: 'lucrum-access-2.jpg', alt: 'Attendance Dashboard' },
-            // { src: 'lucrum-access-3.jpg', alt: 'Biometric Logs' }
+            { src: 'access-control/home.png', alt: 'Access Control Interface' },
+            { src: 'access-control/import.png', alt: 'Import Logs' },
+            { src: 'access-control/records.png', alt: 'Records Dashboard' },
+            { src: 'access-control/settings.png', alt: 'Settings' },
+
         ],
         developmentProcess: 'Built with Clean Architecture and GetX, the system emphasizes low-latency sync, fail-safe offline fallback, and deep hardware-level biometric integration. Designed for high-availability environments with security-first requirements.',
         impactResults: [
