@@ -92,7 +92,7 @@ const projects = {
             { src: 'lucrum-sales/customer.jpg', alt: 'Customer Management' },
             { src: 'lucrum-sales/customerstock.jpg', alt: 'Customer Stock Management' },
         ],
-
+        psNote: "Visual content is currently being updated. Additional screenshots and demos will be available shortly.",
         developmentProcess: `Built using Clean Architecture ensuring separation of concerns and maintainability.
       State management with BLoC and dependency injection via GetIt provide robustness and testability.
       Offline-first design with SQLite and real-time synchronization through WebSockets ensure seamless user experience.`,
@@ -570,6 +570,7 @@ const projects = {
             // { src: 'lucrum-food-2.jpg', alt: 'Live Order Tracking' },
             // { src: 'lucrum-food-3.jpg', alt: 'Order History & Complaints' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Developed using Clean Architecture and GetX for scalable, maintainable code. Focused on real-time experience with WebSockets, Google Maps tracking, and seamless payment integration.',
         impactResults: [
             'Enhanced customer ordering experience',
@@ -642,6 +643,7 @@ const projects = {
             // { src: 'lucrum-rider-2.jpg', alt: 'Live Navigation View' },
             // { src: 'lucrum-rider-3.jpg', alt: 'Earnings & History Dashboard' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Built with Clean Architecture and GetX, the app emphasizes real-time performance, optimized battery usage, and seamless rider UX. WebSocket and background services power uninterrupted delivery operations.',
         impactResults: [
             '25% faster delivery turnaround',
@@ -711,6 +713,7 @@ const projects = {
             // { src: 'lucrum-scanner-2.jpg', alt: 'Data Sync & Offline Queue' },
             // { src: 'lucrum-scanner-3.jpg', alt: 'Scan Summary Dashboard' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Built using Clean Architecture with GetX for reactive state handling. Designed for rugged industrial use cases with offline-first architecture, scan reliability, and ERP integration as core pillars.',
         impactResults: [
             '70% faster scanning in production lines',
@@ -783,6 +786,7 @@ const projects = {
             // { src: 'lucrum-weighbridge-2.jpg', alt: 'Vehicle & Trip Management' },
             // { src: 'lucrum-weighbridge-3.jpg', alt: 'CCTV & Sync Dashboard' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Built with Clean Architecture principles using GetX for reactive flows and modularity. Focused on hardware integration, accurate offline data capture, and secure ERP syncing to streamline weighbridge checkpoints.',
         impactResults: [
             '60% faster truck processing',
@@ -922,6 +926,7 @@ const projects = {
             // { src: 'shorasha-consultant-2.jpg', alt: 'Client Profiles' },
             // { src: 'shorasha-consultant-3.jpg', alt: 'Practice Analytics' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Developed using Clean Architecture with BLoC and GetIt, the system prioritizes modularity, maintainability, and security. Focus was on consultant productivity, client confidentiality, and seamless user workflows.',
         impactResults: [
             'Reduced no-shows by 40% via auto reminders',
@@ -991,6 +996,7 @@ const projects = {
             // { src: 'shorasha-user-2.jpg', alt: 'Booking System' },
             // { src: 'shorasha-user-3.jpg', alt: 'Appointment Dashboard' }
         ],
+        psNote: "Screenshots and demos coming soon. Currently under update.",
         developmentProcess: 'Built with Clean Architecture using BLoC and GetIt for state and dependency management. The app emphasizes usability, reliability, and real-time experience for both appointment handling and communication.',
         impactResults: [
             'Boosted booking success rate by 45%',

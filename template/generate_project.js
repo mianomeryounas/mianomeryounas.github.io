@@ -43,6 +43,16 @@ function generateProjectPage(projectData, outputPath) {
         .join('\n                ');
     content = content.replace('<!-- IMPACT_RESULTS -->', impactResults);
 
+    if (projectData.psNote) {
+        const psNoteSection = `
+        <div class="project-section">
+            <p><b>P.S.</b> ${projectData.psNote}</p>
+        </div>`;
+        content = content.replace('<!-- PS_NOTE_SECTION -->', psNoteSection);
+    } else {
+        content = content.replace('<!-- PS_NOTE_SECTION -->', '');
+    }
+
     // Write the generated content to the output file
     fs.writeFileSync(outputPath, content);
 }
